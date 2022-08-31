@@ -3,6 +3,10 @@ import React from "react";
 import "../pages/Main.scss";
 
 const Main = () => {
+  // const pass = () => {
+
+  // }
+
   return (
     <div className="container">
       <div className="content">
@@ -14,7 +18,9 @@ const Main = () => {
             placeholder="할 일을 입력해주세요."
             autoComplete="off"
           ></input>
-          <button className="button">+</button>
+          <button onClick={pass} className="button">
+            +
+          </button>
         </div>
         <div className="list-item-area">
           <div className="list-item"></div>

@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   height: 100%;
   margin: 0;
@@ -8,4 +8,10 @@ body {
 }
 .App {
   height: 100%;
+} */
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
 }
