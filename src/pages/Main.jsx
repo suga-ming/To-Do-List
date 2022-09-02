@@ -1,6 +1,6 @@
 import React from "react";
-// import "../pages/Main.css";
-import "../pages/Main.scss";
+import "../pages/Main.css";
+// import "../pages/Main.scss";
 
 const Main = () => {
   // const pass = () => {
@@ -18,9 +18,7 @@ const Main = () => {
             placeholder="할 일을 입력해주세요."
             autoComplete="off"
           ></input>
-          <button onClick={pass} className="button">
-            +
-          </button>
+          <button className="button">+</button>
         </div>
         <div className="list-item-area">
           <div className="list-item"></div>
