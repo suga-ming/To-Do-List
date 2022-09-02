@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../pages/Main.css";
+import List from "../components/List";
 // import "../pages/Main.scss";
 
 const Main = () => {
-  // const pass = () => {
-
-  // }
+  const [inputValue, setInputValue] = useState("");
+  const [todoList, setTodoList] = useState([]);
+  const addItem = () => {
+    setTodoList([...todoList, setInputValue]);
+  };
 
   return (
     <div className="container">
@@ -13,15 +16,20 @@ const Main = () => {
         <div className="title">To Do List</div>
         <div className="list-area">
           <input
+            value={inputValue}
             type="text"
             className="list"
             placeholder="할 일을 입력해주세요."
             autoComplete="off"
+            onChange={(event) => setInputValue(event.target.value)}
           ></input>
-          <button className="button">+</button>
+          <button onClick={addItem} className="button">
+            +
+          </button>
         </div>
+
         <div className="list-item-area">
-          <div className="list-item"></div>
+          <List todoList={todoList} />
         </div>
       </div>
     </div>

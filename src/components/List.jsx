@@ -1,12 +1,16 @@
 import React from "react";
+import "../pages/Main.css";
 import ListItem from "./ListItems";
 
-const List = () => {
+function List(props) {
+  console.log("List", props, ListItem);
   return (
     <div>
-      <ListItem />
+      {props.todoList.map((item) => (
+        <ListItem item={item} />
+      ))}
     </div>
   );
-};
+}
 
 export default List;
