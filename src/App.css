@@ -1,5 +1,5 @@
 /* to do list */
-html,
+/* html,
 body {
   height: 100%;
   margin: 0;
@@ -9,7 +9,7 @@ body {
 }
 .App {
   height: 100%;
-}
+} */
 
 /* //to do list
 
@@ -23,9 +23,13 @@ body {
   margin-top: 5px;
 } */
 
-/* Loce */
+/* Love */
 
-/* body {
+.App {
+  width: 100%;
+}
+
+body {
   background-color: pink;
 }
 
@@ -42,13 +46,14 @@ body {
   border: none;
   background-color: white;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .crease {
   background-color: white;
   border: none;
   border-radius: 5px;
-  margin-right: 10px;
+  margin: 4px 8px 0 8px;
 }
 
 .content {
@@ -58,12 +63,17 @@ body {
   border-bottom: 1px solid gray;
 }
 
+.percent {
+  display: flex;
+  justify-content: space-around;
+}
+
 .title {
   margin-top: 30px;
   text-align: center;
 }
 
-.item {
+.main-item {
   border: 1px solid black;
   border-radius: 10px;
   background-color: rgb(189, 125, 232);
@@ -79,6 +89,53 @@ body {
 
 .buttons {
   margin-bottom: 5px;
-} */
+}
 
-/* //Loce */
+.Like-area {
+  margin-top: 20px;
+  /* width: 100%; */
+  /* background-color: red; */
+  /* height: 300px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.Like-list {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: #fff; */
+}
+
+.by-item-area {
+  /* display: flex; */
+  width: 120px;
+  height: 30px;
+  border: 1px solid rgb(180, 99, 153);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.by-item {
+  text-align: center;
+  line-height: 32px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.gs-item-area {
+  /* display: flex; */
+  width: 120px;
+  height: 30px;
+  border: 1px solid rgb(104, 99, 180);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.gs-item {
+  text-align: center;
+  line-height: 32px;
+}
+
+/* //Love */

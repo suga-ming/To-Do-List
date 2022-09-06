@@ -1,13 +1,12 @@
 import React from "react";
 import "../pages/Main.css";
-import ListItem from "./ListItems";
+import ListItems from "./ListItems";
 
 function List(props) {
-  console.log("List", props, ListItem);
   return (
-    <div>
+    <div className="list">
       {props.todoList.map((item) => (
-        <ListItem item={item} />
+        <ListItems item={item} />
       ))}
     </div>
   );

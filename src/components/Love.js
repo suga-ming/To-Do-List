@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Love_Input from "./Love_Input";
 
 export default function Love(props) {
   const [count, setCount] = useState(50);
@@ -9,7 +10,7 @@ export default function Love(props) {
     setCount(count - 1);
   };
   return (
-    <div className="item">
+    <div className="main-item">
       귀여운 {props.name}님
       <div className="buttons">
         <button className="crease" onClick={increase}>
